@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adapt Page</title>
+	<style>
+
+		html,body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			height: 100%;
+
+		}
+		.wrapper {
+			position: relative;
+			min-height: 100%;
+		}
+		.container {
+		}
+
+		footer {
+		position: absolute;
+		left: 0;
+		bottom: -10vh;
+		width: 100%;
+		}
+
+		header {
+			width: auto;
+		}
+
+		header img {
+			display: block;
+			width: 90vw;
+			height: 15vh;
+			margin: 0 auto;
+		}
+
+		header h1 {
+			display: inline-block;
+			margin: 0;
+			background-color: #c2c2c2;
+			width: 100%;
+			font-size: 1.5rem;
+			text-align: center;
+			line-height: 10vw;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		.news__item {
+			list-style: none;
+			width: auto;
+			max-width: 768px;
+			margin: 50px auto;
+			background-color: #f8f8f8;
+		}
+
+		.news__name {
+			display: block;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.news__story {
+			color: #c2c2c2;
+			display: block;
+			font-size: 1rem;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.news__link {
+			display: block;
+			margin: 0 20px;
+			text-decoration: none;
+			color: #fff;
+			background-color: #68a4c4;
+			line-height: 10vw;
+			text-align: center;
+		}
+
+		.text__item {
+			width: auto;
+			max-width: 768px;
+			margin: 20px auto;
+		}
+
+		.text__name {
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin-left: 20px;
+		}
+
+		.text__main {
+			color: #c2c2c2;
+			margin: 15px 20px;
+			text-align: justify;
+		}
+
+		footer span {
+			display: block;
+			background-color: #68a4c4;
+			color: #fff;
+			line-height: 10vw;
+			padding-left: 20px;
+		}
+
+		@media (min-width: 768px) {
+
+			/*Контейнер для ограничения ширины контента*/
+			.container {
+				width: auto;
+				max-width: 980px;
+				padding: 0 10px;
+				margin: 0 auto;
+				text-align: center;
+				position: relative;
+			}
+
+			header img {
+				width: 100%;
+				max-width: 900px;
+				height: 15vh;
+				margin: 0 auto;
+			}
+
+			header h1 {
+				line-height: 10vh;
+				font-size: 2rem;
+			}
+
+			.news__section {
+				font-size: 0;
+				text-align: center;
+			}
+
+			.news__item {
+				display: inline-block;
+				padding: 0;
+				margin: 50px 1%;
+				width: 23%;
+				position: relative;
+				vertical-align: top;
+				height: 20vh;
+			}
+			.news__name {
+				font-size: 1rem;
+			}
+
+			.news__story {
+				padding: 20px 0;
+				line-height: 1.1rem;
+				position: absolute;
+				top: 20%;
+			}
+
+			.news__link {
+				font-size: 1rem;
+				line-height: 4vh;
+				margin: 0;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+
+			.text__item {
+				max-width: 980px;
+			}
+
+			.text__name {
+				text-align: left;
+				font-weight: bold;
+				margin: 20px 0;
+				font-size: 2rem;
+			}
+
+			.text__main {
+				font-size: 1.5rem;
+				margin: 0;
+			}
+			.text__section .text__item:last-child {
+				padding-bottom: 50px;
+			}
+			footer {
+				background-color: #68a4c4;
+			}
+
+			footer span {
+				font-size: 1.2rem;
+				line-height: 10vh;
+				padding-left: 0;
+				text-align: left;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="">
+				<img alt src="img/header-img.jpg" alt="">
+				<h1 title="(Нет)">IT впереди планеты всей</h1>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<ul class="news__section clearfix">
+					<li class="news__item ">
+						<span class="news__name">Высокое искусство вашими руками</span>
+						<span class="news__story">Сбер представил бесплатную нейросеть Kandinsky
+							3.0.<!--Модель ещё лучше понимает текстовые запросы, за несколько секунд создаёт изображения--></span>
+						<span class="news__more"><a class="news__link" href="#">Читать далее</a></span>
+					</li>
+					<li class="news__item">
+						<span class="news__name">Представлена Hyundai Elantra N2024</span>
+						<span class="news__story">Компания Hyundai представила Elantra, в которой используются современные
+							технологии.<!--Модель ещё лучше понимает текстовые запросы, за несколько секунд создаёт изображения--></span>
+						<span class="news__more"><a class="news__link" href="#">Читать далее</a></span>
+					</li>
+					<li class="news__item">
+						<span class="news__name">История достойная экранизации</span>
+						<span class="news__story">Сэм Альтман вернется на пост генерального директора
+							OpenAI.<!--Модель ещё лучше понимает текстовые запросы, за несколько секунд создаёт изображения--></span>
+						<span class="news__more"><a class="news__link" href="#">Читать далее</a></span>
+					</li>
+					<li class="news__item">
+						<span class="news__name">IT-сектор в Беларуси</span>
+						<span class="news__story">Доля IT-сектора в экономике Беларуси снизилась до
+							4.7%.<!--Модель ещё лучше понимает текстовые запросы, за несколько секунд создаёт изображения--></span>
+						<span class="news__more"><a class="news__link" href="#">Читать далее</a></span>
+					</li>
+				</ul>
+				<div class="text__section">
+					<div class="text__item">
+						<p class="text__name">Объектно-ореинтированное программирование (ООП)</p>
+						<p class="text__main">Объектно-ориентированное программирование — методология программирования, основанная на
+							представлении программы в виде совокупности взаимодействующих объектов, каждый из которых является
+							экземпляром
+							определённого класса, а классы образуют иерархию наследования.</p>
+					</div>
+					<div class="text__item">
+						<p class="text__name">Инкапсуляция</p>
+						<p class="text__main">Инкапсуляция - процесс разделения элементов абстракций, определяющих её структуру
+							(данные)
+							и
+							поведение (методы); инкапсуляция предназначена для изоляции контрактных обязательств абстракции
+							(протокол/интерфейс) от их реализации. На практике это означает, что класс должен состоять из двух частей:
+							интерфейса и реализации. В реализации большинства языков программирования (C++, C#, Java и другие)
+							обеспечивается
+							механизм сокрытия, позволяющий разграничивать доступ к различным частям компонента.</p>
+					</div>
+					<div class="text__item">
+						<p class="text__name">Абстракция</p>
+						<p class="text__main">Абстракция данных — одно из наиболее старых понятий объектно-ориентированного
+							программирования, возникшее ещё до его появления. Абстракция данных связывает лежащий в основе тип данных с
+							набором операций над ним. Пользователь типа данных не имеет прямого доступа к его реализации, но может
+							работать
+							с
+							данными через предоставленный набор операций. Преимущество абстракции данных в разделении операций над
+							данными
+							и
+							внутреннего представления этих данных, что позволяет изменять реализацию, не затрагивая пользователей типа
+							данных.
+							Такое разделение может быть выражено через специальный «интерфейс», сосредотачивающий описание всех
+							возможных
+							применений программы.</p>
+					</div>
+					<div class="text__item">
+						<p class="text__name">Наследование</p>
+						<p class="text__main">Наследование — концепция объектно-ориентированного программирования, согласно которой
+							абстрактный тип данных может наследовать данные и функциональность некоторого существующего типа,
+							способствуя
+							повторному использованию компонентов программного обеспечения.</p>
+					</div>
+					<div class="text__item">
+						<p class="text__name">Полиморфизм</p>
+						<p class="text__main">Полиморфизм в объектно-ориентированном программировании – это возможность обработки
+							разных
+							типов данных, т. е. принадлежащих к разным классам, с помощью "одной и той же" функции, или метода. На самом
+							деле
+							одинаковым является только имя метода, его исходный код зависит от класса. Кроме того, результаты работы
+							одноименных методов могут существенно различаться. Поэтому в данном контексте под полиморфизмом понимается
+							множество форм одного и того же слова – имени метода.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container"><span>&#169; Разработано с помощью StrongНервы&#174;</span></div>
+		</footer>
+	</div>
+
+</body>
+
+</html>
